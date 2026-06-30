@@ -173,5 +173,16 @@ padding-left: 70px;
     width: 50%;
 }
 .info-location h4{
-    color: #f8f8f8;
+    color: #938686;
+}
+.info-location ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.info-location ul li{
+    display: flex;
+    /* flex-direction: column; */
+    gap: 10px;
+    color: #938686;
 }
