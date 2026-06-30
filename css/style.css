@@ -210,3 +210,17 @@ justify-content: space-around;
     gap: 30px;
     color:#938686;
 }
+.End-footer{
+    background-color: #1b1b1b;
+    height: 50vh;
+}
+.End-footer h2{
+    padding: 70px 0px;
+    color: #fff;
+    font-size: 60px;
+    text-align: center;
+}
+.End-footer h2 i{
+    color: #8e7754;
+    font-size: 100px;
+}
