@@ -1,0 +1,26 @@
+const navMobile = document.getElementById("nav-mobile");
+const navList = document.getElementById("nav-list");
+
+function checkScreen() {
+    if (window.innerWidth < 768) {
+        navList.classList.add("hidden");
+        navMobile.classList.remove("hidden");
+    } else {
+        navList.classList.remove("hidden");
+        navMobile.classList.add("hidden");
+    }
+}
+
+// عند تحميل الصفحة
+checkScreen();
+
+// عند تغيير حجم الشاشة
+window.addEventListener("resize", checkScreen);
+
+// عند الضغط على زر القائمة
+navMobile.addEventListener("click", () => {
+    navList.classList.toggle("hidden");
+});
+
+
+
