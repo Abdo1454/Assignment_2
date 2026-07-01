@@ -5,6 +5,7 @@ function checkScreen() {
     if (window.innerWidth < 768) {
         navList.classList.add("hidden");
         navMobile.classList.remove("hidden");
+        navList.style.color = "black";
     } else {
         navList.classList.remove("hidden");
         navMobile.classList.add("hidden");
