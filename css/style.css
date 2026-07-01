@@ -17,6 +17,10 @@
     z-index: 999;
     color: white;
 }
+.background-nav {
+    background-color: #ebe5e5;
+    color: #000;
+}
 .nav-mobile{
     display: none;
 }

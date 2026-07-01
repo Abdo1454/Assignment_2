@@ -23,4 +23,12 @@ navMobile.addEventListener("click", () => {
 });
 
 
+const nav = document.querySelector(".nav-content");
 
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+        nav.classList.add("background-nav");
+    } else {
+        nav.classList.remove("background-nav");
+    }
+});
