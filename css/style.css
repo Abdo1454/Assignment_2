@@ -78,24 +78,6 @@
     color:black;
 }
 
-/* responsive of header */
-@media screen and (max-width: 768px) and (min-width: 320px) {
-    .header-content {
-    position: relative;
-    top:0;
-    height: 40vh;
-    background-image: url("../img/mobile.png");
-    width: 150%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    /* margin-bottom: 50px; */
-}
-.header-text h2{
-    font-size: 30px;
-    line-height: 40px;
-}
-}
 
 /* style-about start */
 .about-content{
@@ -127,28 +109,7 @@ margin-left: 70px;
     color: #938686;
 }
 
-/* responsive of about */
-@media screen and (max-width: 768px) and (min-width: 320px) {
-.about-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    margin-top: 70px; 
-    margin-left: 30px;
-}
-.image img{
-    width: 140%;
-}
-.about-info{
-    width: 150%;
-    display: flex;
-    flex-direction: column;
-    gap:10px;
-    margin-left: 50px;
-}
-}
+
 /* offer section style */
 .offer-content{
     background-color: #f8f8f8;
@@ -167,26 +128,6 @@ padding-left: 70px;
 .offer-info p {
        width:75%;
     color: #938686;
-}
-/* responsive of offer */
-@media screen and (max-width: 768px) and (min-width: 320px) {
-    .offer-content{
-        flex-direction: column;
-        gap: 30px;
-        padding: 70px 50px;
-        width: 200%;
-    }
-    .offer-info{
-        width: 150%;
-        display: flex;
-        flex-direction: column;
-        gap:10px;
-        margin-left: 50px;
-    }
-    .offer-content image img{
-        width: 40%;
-    }
-
 }
 /* products section style */
 .products-content h4{
@@ -316,4 +257,90 @@ justify-content: space-around;
       display: flex;
       justify-content: center;
       gap: 25px;
+}
+@media (max-width:768px) {
+
+    .nav-content {
+        padding: 15px 20px;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .header-content {
+        width: 100%;
+        height: 100vh;
+        background-image: url("../img/mobile.png");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .header-text {
+        padding: 120px 20px;
+    }
+
+    .header-text h2 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .header-text p {
+        font-size: 18px;
+    }
+
+    .about-content,
+    .offer-content,
+    .location-content,
+    .daitils-footer,
+    .lists {
+        flex-direction: column;
+        gap: 35px;
+        padding: 40px 20px;
+        margin: 0;
+    }
+
+    .about-info,
+    .offer-info,
+    .info-location,
+    .desc-footer,
+    .list {
+        width: 100%;
+    }
+
+    .about-info p,
+    .offer-info p,
+    .info-location p,
+    .about-info ul,
+    .list p {
+        width: 100%;
+    }
+
+    .image,
+    .offer-content .image {
+        width: 100%;
+    }
+
+    .image img,
+    .offer-content .image img,
+    .list img {
+        width: 100%;
+    }
+
+    iframe {
+        width: 100%;
+        height: 350px;
+    }
+
+    .End-footer h2 {
+        font-size: 40px;
+    }
+
+    .End-footer h2 i {
+        font-size: 60px;
+    }
+
+    .icon-footer {
+        font-size: 24px;
+    }
 }
